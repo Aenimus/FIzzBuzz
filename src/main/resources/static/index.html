@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to FizzBuzz. You can do anything... at FizzBuzz. Welcome.</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>
+            <p>Welcome to FizzBuzz.</p>
+            <p>You can do <i>anything</i>... at FizzBuzz.</p>
+            <p><i>Welcome.</i></p>
+        </h1>
+        <script type="text/javascript">
+            function updateLink() {
+                var text = document.getElementById('number').value;
+                var link = document.getElementById('query');
+                link.setAttribute('href', window.location.origin + '/response/' + text);
+            }
+        </script>
+        Type your number to be evaluated: <input name="number" id="number" type="text" placeholder="Enter a number"/>
+        <a id="query"><button onclick="updateLink()">submit</button></a>
+</div>
+</body>
+</html>

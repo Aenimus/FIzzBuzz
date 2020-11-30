@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to FizzBuzz. You can do anything... at FizzBuzz. Welcome.</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <p th:text="'The result for ' + ${num} + ' number is...'"/>
+        <p th:text="${log}"/>
+        <script type="text/javascript">
+            function updateLink() {
+                var text = document.getElementById('number').value;
+                var link = document.getElementById('query');
+                link.setAttribute('href', window.location.origin + '/response/' + text);
+            }
+        </script>
+        Why not try another?
+        Type your number to be evaluated: <input name="number" id="number" type="text" placeholder="Enter a number"/>
+        <a id="query"><button onclick="updateLink()">submit</button></a>
+    </div>
+</body>
+</html>
