@@ -1,4 +1,4 @@
-package com.stutt.FizzBuzz;
+package com.stutt.fizzbuzz;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
